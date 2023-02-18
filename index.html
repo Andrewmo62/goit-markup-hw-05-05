@@ -12,14 +12,16 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+
     <!-- HEADER -->
+
    <header class="header">
 <div class="container page-header-container"> 
 <nav class="header-navigat page-navigat">
     <a class="logo link" href="./index.html"><span class="logo-web">WEB</span><span class="logo-studio">STUDIO</span></a>
 <ul class="header-list list page-navigat">
     <li class="header-item">
-        <a class="header-link link" href="">Studio</a></li>
+        <a class="header-link current link" href="./index.html">Studio</a></li>
     <li class="header-item">
         <a class="header-link link" href="./portfolio.html">Portfolio</a></li>
     <li class="header-item">
@@ -35,14 +37,18 @@
 </div>
    </header> 
    <main>
+
    <!--hero-->
+
    <section class="hero-section">
    <div class="container hero-title-container"> 
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button type="button" class="hero-button">Order Service</button>
+        <button type="button" class="hero-button" data-modal-open>Order Service</button>
     </div>
    </section>
+
    <!--ПЕРЕВАГИ-->
+
    <section class="advantage">
     <div class="container">   
     <h2 class="advantage-title">Advantages</h2>
@@ -356,5 +362,18 @@
         </div>
         
     </footer>
+
+    <!-- MODAL -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="modal-close-icon" width="8" height="8">
+                    <use href="./images/heroandicons/icons.svg#icon-close"></use>
+                </svg>
+            </a> 
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
