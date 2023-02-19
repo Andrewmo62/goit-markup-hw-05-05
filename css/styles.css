@@ -393,6 +393,7 @@ display: block;
     justify-content: center;
     align-items: center;
     background-color: var(--accent-color);
+    transition: background-color var(--transition-timing-btn);
 }
 
 .team-card-soc-icon {
@@ -440,6 +441,8 @@ display: block;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: border-color var(--transition-timing-btn);
+              
 }
 
 .costumers-link:is(:focus, :hover) {
@@ -448,10 +451,12 @@ display: block;
 
 .costumers-link:is(:focus, :hover) .costumers-icon {
     fill: var(--button-focus-hover);
+    transition: fill var(--transition-timing-btn);
 }
 
 .costumers-icon {
     fill: var(--costumers-border-icon);
+    
 }
 
 /* PORTFOLIO */
@@ -485,7 +490,6 @@ display: block;
     display: flex;
     margin-bottom: 72px;
     justify-content: center;
-    padding-top: 96px;
     padding-bottom: 72px;
 }
 
@@ -647,7 +651,7 @@ display: block;
     justify-content: center;
     align-items: center;
     background-color: var(--footer-icon-main-color);
-
+    transition: background-color var(--transition-timing-btn);
 }
 
 .footer-icons-styles-link:hover,
