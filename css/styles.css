@@ -496,7 +496,7 @@ display: block;
     display: flex;
     margin-bottom: 72px;
     justify-content: center;
-    padding-bottom: 72px;
+    /* padding-bottom: 72px; */
 }
 
 .portfolio-button {
@@ -608,7 +608,14 @@ display: block;
 }
 .logo-footer {
     display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
     margin-bottom: 16px;
+
+
 }
 .footer-text {
     max-width: 264px;
@@ -671,7 +678,7 @@ display: block;
 }
 
 .footer-subscribe {
-    margin-left: 80px;
+    margin-left: auto;
 }
 
 .subscribe-title {
@@ -689,6 +696,9 @@ display: block;
 .subscribe-field {
 }
 .subscribe-input {
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     width: 264px;
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -753,17 +763,22 @@ display: block;
 }
 
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    
     width: 408px;
     min-height: 576px;
     background: #FCFCFC;
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     padding: 24px;
+    padding-top: 72px;
     transition: transform var(--transition-timing-btn);
+}
+
+.modal-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleX(1);
 }
 
 .backdrop.is-hidden .modal {
@@ -771,6 +786,9 @@ display: block;
 }
 
 .modal-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
     width: 24px;
     height: 24px;
     background: var(--secondary-yext-color);
@@ -781,7 +799,9 @@ display: block;
     align-items: center;
     justify-content: center;
     margin-bottom: 24px;
-    
+    /* transition: border var(--transition-timing-btn),
+                background var(--transition-timing-btn),
+                fill var(--transition-timing-btn); */
 }
 
 .modal-close-btn:hover,
@@ -794,14 +814,13 @@ display: block;
 }
 
 .modal-title {
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-    margin-bottom: 34px;
+    margin-bottom: 16px;
 }
 
 .modal-input {
@@ -843,6 +862,10 @@ padding-left: 38px;
     outline: transparent;
     resize: none;
     margin-bottom: 16px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 117, 0.5);
 }
 
 .input-wrap {
@@ -889,7 +912,7 @@ padding-left: 38px;
 
 
 .modal-field {
-    margin-bottom: 26px;
+    margin-bottom: 8px;
 }
 
 .modal-act-btn {
