@@ -41,7 +41,7 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: 1px dashed blue;
+    /* outline: 1px dashed blue; */
 }
 
 .link {
